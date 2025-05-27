@@ -1,0 +1,12 @@
+Package: pje-installer
+Version: 2.5.16-1
+Architecture: amd64
+Maintainer: Victor Gregory <psygreg@pm.me>
+Installed-Size: 23
+Depends: git, curl, wget, whiptail
+Section: utils
+Priority: optional
+Homepage: https://github.com/psygreg/pje-installer
+Description: Installer for PJEOffice Pro on Linux.
+ .
+ Installs or removes PJEOffice Pro on Linux.

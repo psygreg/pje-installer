@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PJE Installer
+Type=Application
+Exec=/usr/bin/pjeinstaller.sh
+Terminal=true
+Icon=/usr/bin/pjeinstaller.png
+Comment=Installer for PJE Office Pro
+NoDisplay=false
+Categories=Utils

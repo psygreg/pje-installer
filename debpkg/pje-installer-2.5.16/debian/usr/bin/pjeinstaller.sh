@@ -10,6 +10,7 @@ pje_in () {
     sudo rsync -a pjeoffice-pro /opt
     sudo cp pjeoffice-pro.png /opt/pjeoffice-pro
     sudo cp PJEOfficePro.desktop /usr/share/applications
+    sudo chmod +x /opt/pjeoffice-pro/pjeoffice-pro.sh
     rm -rf pjeoffice-pro
     rm pjeoffice-pro-v2.5.16u-linux_x64.zip
     rm pjeoffice-pro.png

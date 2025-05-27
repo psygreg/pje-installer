@@ -1,0 +1,31 @@
+Format: 1.8
+Date: Mon, 26 May 2025 1:00:47 -0300
+Source: pje-installer
+Binary: pje-installer
+Architecture: source amd64
+Version: 2.5.16-1
+Distribution: plucky
+Urgency: medium
+Maintainer: Victor Gregory <psygreg@pm.me>
+Changed-By: Victor Gregory <psygreg@pm.me>
+Description:
+ pje-installer - Installer for PJEOffice Pro on Linux.
+Changes:
+ pje-installer (2.5.16-1) plucky; urgency=medium
+ .
+   * First installer
+Checksums-Sha1:
+ f0756fadd725c26ba816aefae7f586a8fa4e2e64 602 pje-installer_2.5.16-1.dsc
+ 479f900e9d51e75283d52eeba472538856d2743d 11759 pje-installer_2.5.16-1.tar.gz
+ 467337004753e3abb41be4f3c55aba3778924e52 5211 pje-installer_2.5.16-1_amd64.buildinfo
+ 778c891e575269268959365788d4c81d01647e56 11700 pje-installer_2.5.16-1_amd64.deb
+Checksums-Sha256:
+ db5892f54a36eba1b2c1515163e8f29917da62e9ab1da573e5933ea2a8946523 602 pje-installer_2.5.16-1.dsc
+ 1d580fd6139e2d1247d120a884862d6b81cc72a742d47b83bb2bc9a2d4b98b6f 11759 pje-installer_2.5.16-1.tar.gz
+ 674d4c28580ea82e734d0480feb46e6dd444b02aeab22eab0a04ff8496e4510b 5211 pje-installer_2.5.16-1_amd64.buildinfo
+ 26589f19fae2ba398a6dd824d2f95f4196653a826879370ffad4b97b0b562ddf 11700 pje-installer_2.5.16-1_amd64.deb
+Files:
+ 9dd2668654cef544946a02dc6b33b473 602 utils optional pje-installer_2.5.16-1.dsc
+ 69e65a2f3b54727fa69013956125af92 11759 utils optional pje-installer_2.5.16-1.tar.gz
+ bdea69a21593f98bc47d5d2a2efdb07f 5211 utils optional pje-installer_2.5.16-1_amd64.buildinfo
+ 2f582ca00fbbc1f05e4835328ddea856 11700 utils optional pje-installer_2.5.16-1_amd64.deb

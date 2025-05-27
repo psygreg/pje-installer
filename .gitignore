@@ -1,0 +1,9 @@
+*.buildinfo
+*.build
+*.changes
+*.dsc
+*.tar.gz
+*.substvars
+debpkg/pje-installer-2.5.16/debian/.debhelper
+debpkg/pje-installer-2.5.16/debian/pje-installer
+debpkg/pje-installer-2.5.16/debian/debhelper-build-stamp

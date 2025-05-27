@@ -1,0 +1,62 @@
+ dpkg-buildpackage -us -uc -ui
+dpkg-buildpackage: informação: pacote fonte pje-installer
+dpkg-buildpackage: informação: versão fonte 2.5.16-1
+dpkg-buildpackage: informação: distribuição fonte plucky
+dpkg-buildpackage: informação: fonte alterada por Victor Gregory <psygreg@pm.me>
+ dpkg-source --before-build .
+dpkg-buildpackage: informação: arquitectura anfitriã amd64
+ debian/rules clean
+dh clean
+   dh_clean
+ dpkg-source -b .
+dpkg-source: aviso: nenhum formato fonte especificado em debian/source/format, veja dpkg-source(1)
+dpkg-source: aviso: versão de pacote nativa pode não ter uma revisão
+dpkg-source: informação: a usar formato fonte '1.0'
+dpkg-source: informação: a compilar pje-installer em pje-installer_2.5.16-1.tar.gz
+dpkg-source: informação: a compilar pje-installer em pje-installer_2.5.16-1.dsc
+ debian/rules binary
+dh binary
+   dh_update_autotools_config
+   dh_autoreconf
+   create-stamp debian/debhelper-build-stamp
+   dh_prep
+   dh_auto_install --destdir=debian/pje-installer/
+   dh_install
+   dh_installdocs
+   dh_installchangelogs
+   dh_perl
+   dh_link
+   dh_strip_nondeterminism
+   dh_compress
+   dh_fixperms
+   dh_missing
+   dh_dwz -a
+   dh_strip -a
+   dh_makeshlibs -a
+   dh_shlibdeps -a
+   dh_installdeb
+   dh_gencontrol
+   dh_md5sums
+   dh_builddeb
+dpkg-deb: construindo o pacote 'pje-installer' em '../pje-installer_2.5.16-1_amd64.deb'.
+ dpkg-genbuildinfo -O../pje-installer_2.5.16-1_amd64.buildinfo
+ dpkg-genchanges -O../pje-installer_2.5.16-1_amd64.changes
+dpkg-genchanges: informação: a incluir o código fonte total no upload
+ dpkg-source --after-build .
+dpkg-buildpackage: informação: upload total: pacote Debian-nativo (fonte completa é incluída)
+Now running lintian pje-installer_2.5.16-1_amd64.changes ...
+E: pje-installer changes: bad-distribution-in-changes-file plucky
+E: pje-installer source: debian-rules-is-dh_make-template [debian/rules:22]
+E: pje-installer source: malformed-debian-changelog-version 2.5.16-1 (for native) [debian/changelog:1]
+W: pje-installer source: debhelper-but-no-misc-depends pje-installer
+W: pje-installer: desktop-entry-invalid-category Utils [usr/share/applications/PJEInstaller.desktop]
+W: pje-installer: desktop-entry-lacks-main-category [usr/share/applications/PJEInstaller.desktop]
+W: pje-installer: executable-not-elf-or-script [usr/bin/pjeinstaller.png]
+W: pje-installer: extended-description-contains-empty-paragraph
+W: pje-installer: initial-upload-closes-no-bugs [usr/share/doc/pje-installer/changelog.Debian.gz:1]
+W: pje-installer source: missing-debian-source-format
+W: pje-installer: no-manual-page [usr/bin/pjeinstaller.png]
+W: pje-installer: no-manual-page [usr/bin/pjeinstaller.sh]
+W: pje-installer: script-with-language-extension [usr/bin/pjeinstaller.sh]
+W: pje-installer source: superfluous-file-pattern * [debian/copyright:6]
+Finished running lintian.
