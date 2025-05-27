@@ -4,17 +4,23 @@
 pje_in () {
 
     wget https://pje-office.pje.jus.br/pro/pjeoffice-pro-v2.5.16u-linux_x64.zip
-    
+    wget -O PJEOfficePro.desktop https://raw.githubusercontent.com/psygreg/pjeoffice-installer/refs/heads/main/usr/share/applications/PJEOfficePro.desktop
+    wget -O pjeoffice-pro.png https://raw.githubusercontent.com/psygreg/pjeoffice-installer/refs/heads/main/pjeoffice-pro.png
     unzip pjeoffice-pro-v2.5.16u-linux_x64.zip
     sudo rsync -a pjeoffice-pro /opt
-    sudo cp usr/share/applications/PJEOfficePro.desktop /usr/share/applications
+    sudo cp pjeoffice-pro.png /opt/pjeoffice-pro
+    sudo cp PJEOfficePro.desktop /usr/share/applications
+    rm -rf pjeoffice-pro
+    rm pjeoffice-pro-v2.5.16u-linux_x64.zip
+    rm pjeoffice-pro.png
+    rm PJEOfficePro.desktop
 
 }
 
 #removal
 pje_rm () {
 
-    sudo rm -rf /opt/pje-office-pro
+    sudo rm -rf /opt/pjeoffice-pro
     sudo rm /usr/share/applications/PJEOfficePro.desktop
 
 }
