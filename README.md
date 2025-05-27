@@ -1,2 +1,2 @@
-# pjeoffice-deb
-Debian package port of PJEOffice for Linux.
+# pjeoffice-installer
+Instalador do PJEOffice Pro para Linux.
