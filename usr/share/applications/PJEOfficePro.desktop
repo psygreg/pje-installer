@@ -1,0 +1,9 @@
+[Desktop Entry]
+Name=PJEOffice Pro
+Type=Application
+Exec=/opt/pje-office-pro/pjeoffice-pro.sh
+Terminal=true
+Icon=/opt/pje-office-pro/pje-office-pro.png
+Comment=A set of tools for Linux presented in a user-friendly way
+NoDisplay=false
+Categories=Office
